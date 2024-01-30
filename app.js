@@ -21,6 +21,7 @@ const app = express();
 const corsOptions = {
   origin: 'http://localhost:3000',
   credentials: true,
+  exposedHeaders: ["set-cookie"],
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
