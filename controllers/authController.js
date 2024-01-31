@@ -20,8 +20,7 @@ const createSendToken = (user, statusCode, res) => {
     httpOnly: true,
     domain:"http://68.183.179.232:3000",
     secure: false,
-    path: "/",
-    sameSite: 'lax',
+    sameSite: 'None',
   };
   // if (process.env.NODE_ENV === 'production') cookieOptions.secure = false;
 
